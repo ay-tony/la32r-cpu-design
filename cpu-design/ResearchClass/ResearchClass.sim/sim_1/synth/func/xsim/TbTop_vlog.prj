@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"TbTop_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../ResearchClass.srcs/sim_1/new/TbTop.sv" \
+
+# Do not sort compile order
+nosort

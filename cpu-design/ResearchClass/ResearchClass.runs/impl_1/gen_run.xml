@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg676-3" LaunchTime="1720392453">
+  <File Type="ROUTE-PWR" Name="SocTop_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="SocTop.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="SocTop_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="SocTop_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="SocTop_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="SocTop.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SocTop_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SocTop_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="SocTop_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="SocTop_opt.dcp"/>
+  <File Type="OPT-DRC" Name="SocTop_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SocTop.hwdef"/>
+  <File Type="PWROPT-DCP" Name="SocTop_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SocTop_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="SocTop_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SocTop_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SocTop_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SocTop_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SocTop_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SocTop_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SocTop_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SocTop_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SocTop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="SocTop.bin"/>
+  <File Type="PLACE-TIMING" Name="SocTop_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="SocTop_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="SocTop_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SocTop_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="SocTop.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SocTop_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SocTop_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SocTop_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="SocTop.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="SocTop_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SocTop_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SocTop_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SocTop_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="SocTop_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SocTop_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="SocTop_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SocTop_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SocTop_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SocTop_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="SocTop_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="SocTop_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SocTop_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SocTop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SocTop_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SocTop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SocTop_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SocTop_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SocTop_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="SocTop_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="SocTop_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SocTop_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SocTop_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SocTop_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SocTop_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SocTop_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="SocTop_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="SocTop.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="SocTop_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SocTop_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="SocTop.nky"/>
+  <File Type="BITSTR-BMM" Name="SocTop_bd.bmm"/>
+  <File Type="PDI-FILE" Name="SocTop.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="SocTop_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="SocTop_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="SocTop.rcfi"/>
+  <File Type="CFI_FILE" Name="SocTop.cfi"/>
+  <File Type="RNPI_FILE" Name="SocTop.rnpi"/>
+  <File Type="NPI_FILE" Name="SocTop.npi"/>
+  <File Type="RBD_FILE" Name="SocTop.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SocTop.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="SocTop.sysdef"/>
+  <File Type="BG-BGN" Name="SocTop.bgn"/>
+  <File Type="BG-DRC" Name="SocTop.drc"/>
+  <File Type="RDI-RDI" Name="SocTop.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="SocTop_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="SocTop_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ConfReg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decoder.svh">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Alu.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Bridge.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CpuTop.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decoder.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lsu.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegFile.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SocTop.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/mycpu_env/func/obj/inst_ram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/mycpu_env/func/obj/data_ram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SocTop"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/SocTop.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/scroller.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="InstRam"/>
+  <BlockFileSet Type="BlockSrcs" Name="DataRam"/>
+  <BlockFileSet Type="BlockSrcs" Name="ClkPll"/>
+</GenRun>

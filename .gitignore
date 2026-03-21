@@ -1,0 +1,8 @@
+# Vivado simulation/project artifacts
+*.vcd
+*.wdb
+*.jou
+*.log
+*.str
+/cpu-design/*/project/
+/cpu-design/*/behav/

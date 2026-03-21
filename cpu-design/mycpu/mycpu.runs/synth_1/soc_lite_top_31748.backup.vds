@@ -1,0 +1,508 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Jun 29 04:33:17 2024
+# Process ID: 31748
+# Current directory: C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1
+# Command line: vivado.exe -log soc_lite_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lite_top.tcl
+# Log file: C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1/soc_lite_top.vds
+# Journal file: C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1\vivado.jou
+# Running On: laptop-mach, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 16295 MB
+#-----------------------------------------------------------
+source soc_lite_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/utils_1/imports/synth_1/soc_lite_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/utils_1/imports/synth_1/soc_lite_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top soc_lite_top -part xc7a200tfbg676-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-3
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30668
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1385.848 ; gain = 439.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'rj_eq_rd', assumed default net type 'wire' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/mycpu_top.v:241]
+INFO: [Synth 8-6157] synthesizing module 'soc_lite_top' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/soc_top.v:65]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1/.Xil/Vivado-31748-laptop-mach/realtime/clk_pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1/.Xil/Vivado-31748-laptop-mach/realtime/clk_pll_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/mycpu_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_6_64' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_6_64' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:40]
+INFO: [Synth 8-6157] synthesizing module 'decoder_4_16' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_4_16' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:14]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2_4' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2_4' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_5_32' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_5_32' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/tools.v:27]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/mycpu_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'inst_ram' [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/inst_ram/synth/inst_ram.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32768 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: inst_ram.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_14' declared at 'c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/data_ram/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3191' bound to instance 'U0' of component 'dist_mem_gen_v8_0_14' [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/inst_ram/synth/inst_ram.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'inst_ram' (0#1) [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/inst_ram/synth/inst_ram.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/bridge_1x2.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/bridge_1x2.v:50]
+INFO: [Synth 8-638] synthesizing module 'data_ram' [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/data_ram/synth/data_ram.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 32768 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: data_ram.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_14' declared at 'c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/data_ram/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3191' bound to instance 'U0' of component 'dist_mem_gen_v8_0_14' [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/data_ram/synth/data_ram.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'data_ram' (0#1) [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/data_ram/synth/data_ram.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/confreg.v:73]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/confreg.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lite_top' (0#1) [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/sources_1/new/soc_top.v:65]
+WARNING: [Synth 8-7129] Port conf_addr[31] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[30] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[29] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[28] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[27] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[26] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[25] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[24] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[23] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[22] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[21] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[20] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[19] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[18] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[17] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conf_addr[16] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[31] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[30] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[29] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[28] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[27] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[26] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[25] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[24] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[23] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[22] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[21] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[20] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[19] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[18] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[17] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[16] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[15] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[14] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[13] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[12] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[11] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[10] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[9] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[8] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[7] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[6] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[5] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[4] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[3] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[2] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[1] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[0] in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_ce in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_ce in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_rst in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo_srst in module spram__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[31] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[30] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[29] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[28] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[27] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[26] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[25] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[24] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[23] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[22] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[21] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[20] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[19] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[18] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[17] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[16] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[15] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[14] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[13] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[12] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[11] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[10] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[9] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[8] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[7] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[6] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[5] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[4] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[3] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[2] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[1] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[0] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[31] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[30] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[29] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[28] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[27] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[26] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[25] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[24] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[23] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[22] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[21] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[20] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[19] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[18] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[17] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[16] in module dist_mem_gen_v8_0_14_synth__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:45 ; elapsed = 00:02:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:45 ; elapsed = 00:02:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:45 ; elapsed = 00:02:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3999.211 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Finished Parsing XDC File [c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Parsing XDC File [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/constrs_1/new/soc_top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/constrs_1/new/soc_top.xdc:5]
+Finished Parsing XDC File [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/constrs_1/new/soc_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.srcs/constrs_1/new/soc_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3999.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3999.211 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:50 ; elapsed = 00:02:16 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:50 ; elapsed = 00:02:16 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.gen/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for data_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \pll.clk_pll . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:16 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                           000001 |                              000
+                  iSTATE |                           100000 |                              001
+                 iSTATE0 |                           010000 |                              010
+                 iSTATE1 |                           001000 |                              011
+                 iSTATE2 |                           000100 |                              100
+                 iSTATE3 |                           000010 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:51 ; elapsed = 00:02:17 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 22    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 11    
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 14    
+	   5 Input   16 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 10    
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:36 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+-----------------------------------------------------------+-----------+----------------------+-------------------+
+|Module Name  | RTL Object                                                | Inference | Size (Depth x Width) | Primitives        | 
++-------------+-----------------------------------------------------------+-----------+----------------------+-------------------+
+|soc_lite_top | cpu/u_regfile/rf_reg                                      | Implied   | 32 x 32              | RAM32M x 12       | 
+|inst_ram/U0  | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 32 K x 32            | RAM256X1S x 4096  | 
+|data_ram/U0  | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 32 K x 32            | RAM256X1S x 4096  | 
++-------------+-----------------------------------------------------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:09 ; elapsed = 00:02:40 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:03:03 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------+-----------------------------------------------------------+-----------+----------------------+-------------------+
+|Module Name  | RTL Object                                                | Inference | Size (Depth x Width) | Primitives        | 
++-------------+-----------------------------------------------------------+-----------+----------------------+-------------------+
+|soc_lite_top | cpu/u_regfile/rf_reg                                      | Implied   | 32 x 32              | RAM32M x 12       | 
+|inst_ram/U0  | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 32 K x 32            | RAM256X1S x 4096  | 
+|data_ram/U0  | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 32 K x 32            | RAM256X1S x 4096  | 
++-------------+-----------------------------------------------------------+-----------+----------------------+-------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:32 ; elapsed = 00:03:06 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:34 ; elapsed = 00:03:09 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:34 ; elapsed = 00:03:09 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:35 ; elapsed = 00:03:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:35 ; elapsed = 00:03:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:03:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:03:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_pll       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_pll   |     1|
+|2     |CARRY4    |    56|
+|3     |LUT1      |    15|
+|4     |LUT2      |   116|
+|5     |LUT3      |   114|
+|6     |LUT4      |   221|
+|7     |LUT5      |   348|
+|8     |LUT6      |  2119|
+|9     |MUXF7     |   761|
+|10    |MUXF8     |   346|
+|11    |RAM256X1S |  5601|
+|12    |RAM32M    |    10|
+|13    |RAM32X1D  |     4|
+|14    |FDRE      |   814|
+|15    |FDSE      |    39|
+|16    |IBUF      |    15|
+|17    |OBUF      |    71|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:03:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 240 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:03:08 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:03:10 . Memory (MB): peak = 3999.211 ; gain = 3052.477
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 3999.211 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6778 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3999.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5615 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 5601 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: 4ed2022e
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:41 ; elapsed = 00:03:19 . Memory (MB): peak = 3999.211 ; gain = 3502.207
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 3999.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/shuij/Documents/Projects/CpuDesign/mycpu/mycpu.runs/synth_1/soc_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_lite_top_utilization_synth.rpt -pb soc_lite_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 29 04:36:43 2024...

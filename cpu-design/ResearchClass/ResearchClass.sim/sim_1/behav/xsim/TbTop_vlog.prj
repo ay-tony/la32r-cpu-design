@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ResearchClass.ip_user_files/ipstatic" \
+"../../../../ResearchClass.gen/sources_1/ip/ClkPll/ClkPll_clk_wiz.v" \
+"../../../../ResearchClass.gen/sources_1/ip/ClkPll/ClkPll.v" \
+"../../../../ResearchClass.gen/sources_1/ip/DataRam/sim/DataRam.v" \
+"../../../../ResearchClass.gen/sources_1/ip/InstRam/sim/InstRam.v" \
+"../../../../ResearchClass.srcs/sources_1/new/ConfReg.v" \
+
+sv xil_defaultlib  --include "../../../../ResearchClass.ip_user_files/ipstatic" \
+"../../../../ResearchClass.srcs/sources_1/new/Alu.sv" \
+"../../../../ResearchClass.srcs/sources_1/new/Bridge.sv" \
+"../../../../ResearchClass.srcs/sources_1/new/CpuTop.sv" \
+"../../../../ResearchClass.srcs/sources_1/new/Decoder.sv" \
+"../../../../ResearchClass.srcs/sources_1/new/Lsu.sv" \
+"../../../../ResearchClass.srcs/sources_1/new/RegFile.sv" \
+"../../../../ResearchClass.srcs/sources_1/new/SocTop.sv" \
+"../../../../ResearchClass.srcs/sim_1/new/TbTop.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

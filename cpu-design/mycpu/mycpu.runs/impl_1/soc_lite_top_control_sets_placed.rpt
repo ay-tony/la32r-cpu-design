@@ -1,0 +1,234 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Jul  2 19:08:28 2024
+| Host         : laptop-mach running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file soc_lite_top_control_sets_placed.rpt
+| Design       : soc_lite_top
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   156 |
+|    Minimum number of control sets                        |   156 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    58 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   156 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   151 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             154 |           69 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             264 |          122 |
+| Yes          | No                    | No                     |              32 |           22 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             484 |          292 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-----------------------------------------------------------------------------------------------+------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                                         Enable Signal                                         |    Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+-----------------------------------------------------------------------------------------------+------------------------+------------------+----------------+--------------+
+|  pll.clk_pll/inst/cpu_clk   | u_confreg/step0_sample                                                                        | u_confreg/SR[0]        |                1 |              1 |         1.00 |
+|  pll.clk_pll/inst/cpu_clk   | u_confreg/step1_sample                                                                        | u_confreg/SR[0]        |                1 |              1 |         1.00 |
+|  pll.clk_pll/inst/cpu_clk   |                                                                                               | u_confreg/state_count0 |                1 |              4 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | u_confreg/p_0_in_1                                                                            | u_confreg/SR[0]        |                4 |              6 |         1.50 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/E[0]                                                                            | u_confreg/SR[0]        |                3 |              8 |         2.67 |
+|  pll.clk_pll/inst/cpu_clk   |                                                                                               | u_confreg/key_count0   |                5 |             20 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   |                                                                                               | u_confreg/step0_count0 |                5 |             20 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   |                                                                                               | u_confreg/step1_count0 |                5 |             20 |         4.00 |
+|  pll.clk_pll/inst/timer_clk |                                                                                               | u_confreg/SR[0]        |                8 |             32 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_6_6[0]                                                           | u_confreg/SR[0]        |               21 |             32 |         1.52 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_3_0[0]                                                           | u_confreg/SR[0]        |               21 |             32 |         1.52 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_3_1[0]                                                           | u_confreg/SR[0]        |               21 |             32 |         1.52 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_6_0[0]                                                           | u_confreg/SR[0]        |               18 |             32 |         1.78 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_6_3[0]                                                           | u_confreg/SR[0]        |               21 |             32 |         1.52 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/cpu_resetn_reg[0]                                                               |                        |               22 |             32 |         1.45 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_6_1[0]                                                           | u_confreg/SR[0]        |               20 |             32 |         1.60 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_6_2[0]                                                           | u_confreg/SR[0]        |               22 |             32 |         1.45 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_6_4[0]                                                           | u_confreg/SR[0]        |               21 |             32 |         1.52 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_6_5[0]                                                           | u_confreg/SR[0]        |               21 |             32 |         1.52 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_rg1_data[31]_i_2_0[0]                                                       | u_confreg/SR[0]        |               17 |             34 |         2.00 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_7_1[0]                                                           | u_confreg/SR[0]        |               17 |             34 |         2.00 |
+|  pll.clk_pll/inst/cpu_clk   |                                                                                               | u_confreg/SR[0]        |               13 |             42 |         3.23 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_data[31]_i_7_0[0]                                                           | u_confreg/SR[0]        |               33 |             48 |         1.45 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/led_rg1_data[31]_i_2_1[0]                                                       | u_confreg/SR[0]        |               30 |             64 |         2.13 |
+|  pll.clk_pll/inst/timer_clk |                                                                                               |                        |               34 |             67 |         1.97 |
+|  pll.clk_pll/inst/cpu_clk   | cpu/u_regfile/rf_reg_r1_0_31_0_5_i_1_n_0                                                      |                        |               11 |             88 |         8.00 |
+|  pll.clk_pll/inst/cpu_clk   |                                                                                               | cpu/reset              |               85 |            126 |         1.48 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12800_13055_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13056_13311_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13824_14079_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14080_14335_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14592_14847_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14336_14591_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15104_15359_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14848_15103_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1536_1791_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15360_15615_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15616_15871_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15872_16127_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16128_16383_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16640_16895_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16384_16639_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16896_17151_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17152_17407_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17664_17919_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17408_17663_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1792_2047_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17920_18175_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18176_18431_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18432_18687_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18688_18943_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18944_19199_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19200_19455_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3072_3327_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30720_30975_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19712_19967_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19456_19711_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19968_20223_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20224_20479_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2048_2303_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20480_20735_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20992_21247_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20736_20991_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_21504_21759_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_21248_21503_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_21760_22015_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22016_22271_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22272_22527_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22528_22783_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22784_23039_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23040_23295_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23296_23551_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2304_2559_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23808_24063_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23552_23807_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24320_24575_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24064_24319_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24832_25087_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24576_24831_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25088_25343_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25344_25599_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2560_2815_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25600_25855_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_0_0_i_1_n_0     |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25856_26111_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26112_26367_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26624_26879_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26368_26623_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27136_27391_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26880_27135_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27392_27647_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27648_27903_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27904_28159_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28160_28415_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2816_3071_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28416_28671_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28928_29183_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28672_28927_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29184_29439_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29440_29695_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29952_30207_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29696_29951_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30464_30719_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30208_30463_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_31232_31487_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30976_31231_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_31744_31999_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_31488_31743_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_32256_32511_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_32000_32255_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3328_3583_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_32512_32767_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3840_4095_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3584_3839_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4096_4351_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4352_4607_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4608_4863_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5120_5375_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_0_0_i_1_n_0     |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5376_5631_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5632_5887_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5888_6143_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6144_6399_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6400_6655_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6912_7167_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6656_6911_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7168_7423_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7424_7679_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_0_0_i_1_n_0    |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7680_7935_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8192_8447_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7936_8191_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8704_8959_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8448_8703_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9216_9471_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4864_5119_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9728_9983_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9472_9727_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9984_10239_0_0_i_1_n_0  |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13312_13567_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13568_13823_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_0_0_i_1_n_0       |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10240_10495_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1024_1279_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10752_11007_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10496_10751_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11008_11263_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11264_11519_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11776_12031_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11520_11775_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12032_12287_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12288_12543_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12544_12799_0_0_i_1_n_0 |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1280_1535_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   | data_ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8960_9215_0_0_i_1_n_0   |                        |               32 |            128 |         4.00 |
+|  pll.clk_pll/inst/cpu_clk   |                                                                                               |                        |             2029 |           8063 |         3.97 |
++-----------------------------+-----------------------------------------------------------------------------------------------+------------------------+------------------+----------------+--------------+
+
+

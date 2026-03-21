@@ -1,0 +1,135 @@
+{
+    "const": {
+        "TARGET_REL": "1'b0",
+        "TARGET_ABS": "1'b1",
+
+        "CMP_NOCONDITION": "4'b1110",
+        "CMP_E": "4'b0100",
+        "CMP_NE": "4'b1010",
+        "CMP_LE": "4'b1101",
+        "CMP_GT": "4'b0011",
+        "CMP_LT": "4'b1001",
+        "CMP_GE": "4'b0111",
+        "CMP_LTU": "4'b1000",
+        "CMP_GEU": "4'b0110"
+    },
+    "signal": {
+        "target_type": {
+            "length": 1,
+            "stage": "s2",
+            "default_value": 0
+        },
+        "cmp_type": {
+            "length": 4,
+            "stage": "s2",
+            "default_value": 0
+        },
+        "need_bpu": {
+            "length": 1,
+            "stage": "s2",
+            "default_value": 0
+        }
+    },
+    "inst": {
+        "jirl": {
+            "opcode": "010011",
+            "alu_grand_op": "`ALU_GTYPE_LI",
+            "alu_op": "`ALU_STYPE_PCPLUS4",
+            "cmp_type": "`CMP_NOCONDITION",
+            "target_type": "`TARGET_ABS",
+            "src2": "`SRC2_NONE",
+            "imm_type": "`IMM_S16",
+            "src1": "`SRC1_RJ",
+            "srcw": "`SRCW_RD",
+            "bypass_s3": "`BYPASS_S3_ALU",
+            "bypass_s4": "`BYPASS_S4_ALU",
+            "bypass_s5": "`BYPASS_S5_ALU",
+            "need_bpu": 1
+        },
+        "b": {
+            "opcode": "010100",
+            "cmp_type": "`CMP_NOCONDITION",
+            "target_type": "`TARGET_REL",
+            "src2": "`SRC2_NONE",
+            "imm_type": "`IMM_S26",
+            "src1": "`SRC1_NONE",
+            "srcw": "`SRCW_NONE",
+            "need_bpu": 1
+        },
+        "bl": {
+            "opcode": "010101",
+            "alu_grand_op": "`ALU_GTYPE_LI",
+            "alu_op": "`ALU_STYPE_PCPLUS4",
+            "cmp_type": "`CMP_NOCONDITION",
+            "target_type": "`TARGET_REL",
+            "src2": "`SRC2_NONE",
+            "imm_type": "`IMM_S26",
+            "src1": "`SRC1_NONE",
+            "srcw": "`SRCW_R1",
+            "bypass_s3": "`BYPASS_S3_ALU",
+            "bypass_s4": "`BYPASS_S4_ALU",
+            "bypass_s5": "`BYPASS_S5_ALU",
+            "need_bpu": 1
+        },
+        "beq": {
+            "opcode": "010110",
+            "target_type": "`TARGET_REL",
+            "cmp_type": "`CMP_E",
+            "src2": "`SRC2_RD",
+            "src1": "`SRC1_RJ",
+            "imm_type": "`IMM_S16",
+            "srcw": "`SRCW_NONE",
+            "need_bpu": 1
+        },
+        "bne": {
+            "opcode": "010111",
+            "target_type": "`TARGET_REL",
+            "cmp_type": "`CMP_NE",
+            "src2": "`SRC2_RD",
+            "src1": "`SRC1_RJ",
+            "imm_type": "`IMM_S16",
+            "srcw": "`SRCW_NONE",
+            "need_bpu": 1
+        },
+        "blt": {
+            "opcode": "011000",
+            "target_type": "`TARGET_REL",
+            "cmp_type": "`CMP_LT",
+            "src2": "`SRC2_RD",
+            "src1": "`SRC1_RJ",
+            "imm_type": "`IMM_S16",
+            "srcw": "`SRCW_NONE",
+            "need_bpu": 1
+        },
+        "bge": {
+            "opcode": "011001",
+            "target_type": "`TARGET_REL",
+            "cmp_type": "`CMP_GE",
+            "src2": "`SRC2_RD",
+            "src1": "`SRC1_RJ",
+            "imm_type": "`IMM_S16",
+            "srcw": "`SRCW_NONE",
+            "need_bpu": 1
+        },
+        "bltu": {
+            "opcode": "011010",
+            "target_type": "`TARGET_REL",
+            "cmp_type": "`CMP_LTU",
+            "src2": "`SRC2_RD",
+            "src1": "`SRC1_RJ",
+            "imm_type": "`IMM_S16",
+            "srcw": "`SRCW_NONE",
+            "need_bpu": 1
+        },
+        "bgeu": {
+            "opcode": "011011",
+            "target_type": "`TARGET_REL",
+            "cmp_type": "`CMP_GEU",
+            "src2": "`SRC2_RD",
+            "src1": "`SRC1_RJ",
+            "imm_type": "`IMM_S16",
+            "srcw": "`SRCW_NONE",
+            "need_bpu": 1
+        }
+    }
+}

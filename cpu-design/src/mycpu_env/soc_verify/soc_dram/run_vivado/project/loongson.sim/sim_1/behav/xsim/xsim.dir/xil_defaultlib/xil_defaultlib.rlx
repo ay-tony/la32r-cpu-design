@@ -1,0 +1,16 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/myCPU/alu.v,1719316504,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/testbench/async_ram.v,,alu,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/myCPU/mycpu_top.v,1719426674,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/myCPU/regfile.v,,mycpu_top,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/myCPU/regfile.v,1719254778,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/soc_lite_top.v,,regfile,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/myCPU/tools.v,1719254778,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/testbench/mycpu_tb.v,,decoder_2_4;decoder_4_16;decoder_5_32;decoder_6_64,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/BRIDGE/bridge_1x2.v,1719254779,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/xilinx_ip/clk_pll/clk_pll_sim_netlist.v,,bridge_1x2,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/CONFREG/confreg.v,1719583142,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/xilinx_ip/data_ram/simulation/dist_mem_gen_v8_0.v,,confreg,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/soc_lite_top.v,1719254779,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/myCPU/tools.v,,soc_lite_top,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/xilinx_ip/clk_pll/clk_pll_sim_netlist.v,1719584340,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/xilinx_ip/clk_pll/clk_pll_stub.v,,clk_pll_clk_wiz;glbl,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/xilinx_ip/clk_pll/clk_pll_stub.v,1719584340,verilog,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/CONFREG/confreg.v,,clk_pll,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,
+,,,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/myCPU/mycpu_top.v,,dist_mem_gen_v8_0_14,,,,,,,,
+,,,,C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/rtl/BRIDGE/bridge_1x2.v,,async_ram;data_ram;inst_ram,,,,,,,,
+C:/Users/shuij/Documents/Projects/CpuDesign/src/mycpu_env/soc_verify/soc_dram/testbench/mycpu_tb.v,1719254779,verilog,,,,tb_top,,,../../../../../../rtl/xilinx_ip/clk_pll,,,,,

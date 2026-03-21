@@ -1,0 +1,127 @@
+{
+    "const": {
+        "MEM_TYPE_NONE": "3'd0",
+        "MEM_TYPE_WORD": "3'd1",
+        "MEM_TYPE_HALF": "3'd2",
+        "MEM_TYPE_BYTE": "3'd3",
+        "MEM_TYPE_UHALF": "3'd4",
+        "MEM_TYPE_UBYTE": "3'd5"
+    },
+    "signal": {
+        "mem_type": {
+            "length": 3,
+            "stage": "s4",
+            "default_value": "`MEM_TYPE_NONE"
+        },
+        "mem_write": {
+            "length": 1,
+            "stage": "s3",
+            "default_value": 0
+        },
+        "mem_read": {
+            "length": 1,
+            "stage": "s4",
+            "default_value": 0
+        }
+    },
+    "inst": {
+        "ld.bu": {
+            "opcode": "0010101000",
+            "mem_type": "`MEM_TYPE_UBYTE",
+            "mem_read": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "imm_type": "`IMM_S12",
+            "srcw": "`SRCW_RD",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD",
+            "bypass_s4": "`BYPASS_S4_MEM",
+            "bypass_s5": "`BYPASS_S5_MEM"
+        },
+        "ld.hu": {
+            "opcode": "0010101001",
+            "mem_type": "`MEM_TYPE_UHALF",
+            "mem_read": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "imm_type": "`IMM_S12",
+            "srcw": "`SRCW_RD",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD",
+            "bypass_s4": "`BYPASS_S4_MEM",
+            "bypass_s5": "`BYPASS_S5_MEM"
+        },
+        "ld.h": {
+            "opcode": "0010100001",
+            "mem_type": "`MEM_TYPE_HALF",
+            "mem_read": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "imm_type": "`IMM_S12",
+            "srcw": "`SRCW_RD",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD",
+            "bypass_s4": "`BYPASS_S4_MEM",
+            "bypass_s5": "`BYPASS_S5_MEM"
+        },
+        "ld.b": {
+            "opcode": "0010100000",
+            "mem_type": "`MEM_TYPE_BYTE",
+            "mem_read": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "imm_type": "`IMM_S12",
+            "srcw": "`SRCW_RD",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD",
+            "bypass_s4": "`BYPASS_S4_MEM",
+            "bypass_s5": "`BYPASS_S5_MEM"
+        },
+        "ld.w": {
+            "opcode": "0010100010",
+            "mem_type": "`MEM_TYPE_WORD",
+            "mem_read": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "imm_type": "`IMM_S12",
+            "srcw": "`SRCW_RD",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD",
+            "bypass_s4": "`BYPASS_S4_MEM",
+            "bypass_s5": "`BYPASS_S5_MEM"
+        },
+        "st.w": {
+            "opcode": "0010100110",
+            "mem_type": "`MEM_TYPE_WORD",
+            "mem_write": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "src3": "`SRC3_RD",
+            "imm_type": "`IMM_S12",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD"
+        },
+        "st.h": {
+            "opcode": "0010100101",
+            "mem_type": "`MEM_TYPE_HALF",
+            "mem_write": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "src3": "`SRC3_RD",
+            "imm_type": "`IMM_S12",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD"
+        },
+        "st.b": {
+            "opcode": "0010100100",
+            "mem_type": "`MEM_TYPE_BYTE",
+            "mem_write": 1,
+            "src1": "`SRC1_RJ",
+            "src2": "`SRC2_IMM",
+            "src3": "`SRC3_RD",
+            "imm_type": "`IMM_S12",
+            "alu_grand_op": "`ALU_GTYPE_INT",
+            "alu_op": "`ALU_STYPE_ADD"
+        }
+    }
+}

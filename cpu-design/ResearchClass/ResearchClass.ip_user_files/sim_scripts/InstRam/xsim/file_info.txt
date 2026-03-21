@@ -1,0 +1,2 @@
+InstRam.v,verilog,xil_defaultlib,../../../../ResearchClass.gen/sources_1/ip/InstRam/sim/InstRam.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

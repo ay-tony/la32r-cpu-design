@@ -1,0 +1,116 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Jul  8 06:50:14 2024
+| Host         : laptop-mach running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SocTop_control_sets_placed.rpt
+| Design       : SocTop
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    38 |
+|    Minimum number of control sets                        |    38 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    85 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    38 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    28 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             161 |           54 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             142 |           42 |
+| Yes          | No                    | No                     |             274 |          139 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             650 |          324 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+--------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |                   Enable Signal                  |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+--------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  U_ClkPll/inst/clk_out | U_ConfReg/step1_sample                           | U_ConfReg/reset                        |                1 |              1 |         1.00 |
+|  U_ClkPll/inst/clk_out | U_ConfReg/step0_sample                           | U_ConfReg/reset                        |                1 |              1 |         1.00 |
+|  U_ClkPll/inst/clk_out |                                                  | U_ConfReg/state_count0                 |                1 |              4 |         4.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s5_pc0                                  | U_ConfReg/reset                        |                2 |              5 |         2.50 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s4_inst[4]_i_1_n_0                      | U_ConfReg/reset                        |                1 |              5 |         5.00 |
+|  U_ClkPll/inst/clk_out | U_ConfReg/p_0_in_1                               | U_ConfReg/reset                        |                3 |              6 |         2.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s3_sig[srcw][1]_i_1_n_0                 | U_CpuTop/s3_imm[24]_i_1_n_0            |                3 |              6 |         2.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/ena                               |                                        |                5 |              7 |         1.40 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/reset_n_0                         | U_CpuTop/U_Alu/reset_n                 |                2 |              8 |         4.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/virtual_uart_data[7]_i_2_0[0]     | U_ConfReg/reset                        |                4 |              8 |         2.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s5_sig[bypass_s5][1]_i_1_n_0            | U_CpuTop/U_Alu/s4_ctrl_reg[data_valid] |               10 |             17 |         1.70 |
+|  U_ClkPll/inst/clk_out |                                                  | U_ConfReg/key_count0                   |                5 |             20 |         4.00 |
+|  U_ClkPll/inst/clk_out |                                                  | U_ConfReg/step0_count0                 |                5 |             20 |         4.00 |
+|  U_ClkPll/inst/clk_out |                                                  | U_ConfReg/step1_count0                 |                5 |             20 |         4.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/reset_n_0                         | U_CpuTop/U_Alu/s3_sig_reg[src3][0]     |               10 |             24 |         2.40 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/led_data[31]_i_2_1[0]             | U_ConfReg/reset                        |               19 |             32 |         1.68 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/s3_sig_reg[alu_grand_op][2]_22[0] | U_ConfReg/reset                        |               18 |             32 |         1.78 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/s3_sig_reg[alu_grand_op][2]_20[0] | U_ConfReg/reset                        |               21 |             32 |         1.52 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/s3_sig_reg[alu_grand_op][2]_19[0] | U_ConfReg/reset                        |               19 |             32 |         1.68 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/s3_sig_reg[alu_grand_op][2]_21[0] | U_ConfReg/reset                        |               18 |             32 |         1.78 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/E[0]                              | U_ConfReg/reset                        |                9 |             32 |         3.56 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s1_pc[31]_i_1_n_0                       | U_ConfReg/reset                        |                7 |             32 |         4.57 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/led_data[31]_i_2_0[0]             | U_ConfReg/reset                        |               16 |             32 |         2.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/led_data[31]_i_2_2[0]             | U_ConfReg/reset                        |               16 |             32 |         2.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/io_simu[31]_i_3_0[0]              | U_ConfReg/reset                        |               19 |             32 |         1.68 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/led_data[31]_i_2_3[0]             | U_ConfReg/reset                        |               15 |             32 |         2.13 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/led_rg1_data[31]_i_2_0[0]         | U_ConfReg/reset                        |               15 |             34 |         2.27 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/led_rg0_data[31]_i_2_0[0]         | U_ConfReg/reset                        |               16 |             34 |         2.12 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s3_inst[4]_i_2_n_0                      | U_ConfReg/reset                        |               15 |             37 |         2.47 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/led_data[31]_i_3_0[0]             | U_ConfReg/reset                        |               26 |             48 |         1.85 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s5_sig[bypass_s5][1]_i_1_n_0            |                                        |               21 |             51 |         2.43 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s4_sig[src2][1]_i_1_n_0                 |                                        |               29 |             58 |         2.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s3_sig[srcw][1]_i_1_n_0                 |                                        |               37 |             62 |         1.68 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_Alu/num_data[31]_i_2_0[0]             | U_ConfReg/reset                        |               38 |             64 |         1.68 |
+|  U_ClkPll/inst/clk_out |                                                  | U_ConfReg/reset                        |               26 |             78 |         3.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/U_RegFile/rf_reg_r1_0_31_0_5_i_1_n_0    |                                        |               11 |             88 |         8.00 |
+|  U_ClkPll/inst/clk_out | U_CpuTop/s3_inst[4]_i_2_n_0                      |                                        |               47 |             96 |         2.04 |
+|  U_ClkPll/inst/clk_out |                                                  |                                        |               54 |            161 |         2.98 |
++------------------------+--------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+
